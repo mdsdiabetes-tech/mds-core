@@ -15,6 +15,7 @@ const nodeTypes = new Set<NodeType>([
   'Device',
   'Article',
   'FAQ',
+  'Problem',
   'Video',
   'Review',
   'Bundle',
@@ -46,6 +47,7 @@ function idsFor(type: NodeType, core: CoreData) {
     case 'Device': return new Set(core.devices.map(i => i.id));
     case 'Article': return new Set(core.articles.map(i => i.id));
     case 'FAQ': return new Set(core.faqs.map(i => i.id));
+    case 'Problem': return new Set(core.problems.map(i => i.id));
     case 'Review': return new Set(core.reviews.map(i => i.id));
     case 'Video':
     case 'Bundle':

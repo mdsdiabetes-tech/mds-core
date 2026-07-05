@@ -10,6 +10,7 @@ export const DATA_COLLECTIONS = [
   'diseases',
   'categories',
   'faqs',
+  'problems',
   'articles',
   'reviews',
   'relationships',

@@ -9,6 +9,7 @@ export type NodeType =
   | 'Device'
   | 'Article'
   | 'FAQ'
+  | 'Problem'
   | 'Video'
   | 'Review'
   | 'Bundle';
@@ -55,6 +56,7 @@ export type Device = { id: ID; name: string; slug: string; brandId?: ID; deviceT
 export type Disease = { id: ID; name: string; slug: string; description?: string; recommendedCategoryIds?: ID[]; faqIds?: ID[]; };
 export type Category = { id: ID; name: string; slug: string; parentId?: ID; description?: string; };
 export type FAQ = { id: ID; question: string; answer: string; relatedProductIds?: ID[]; relatedDeviceIds?: ID[]; relatedMedicationIds?: ID[]; sourceUrls?: string[]; lastReviewed: string; };
+export type Problem = { id: ID; name: string; slug: string; description?: string; };
 export type Article = { id: ID; title: string; slug: string; summary: string; body: string; relatedProductIds?: ID[]; relatedFAQIds?: ID[]; seoKeywords?: string[]; lastUpdated: string; };
 export type Review = { id: ID; productId: ID; rating: number; title?: string; body: string; verified?: boolean; createdAt: string; };
-export type CoreData = { products: Product[]; brands: Brand[]; manufacturers: Manufacturer[]; medications: Medication[]; devices: Device[]; diseases: Disease[]; categories: Category[]; faqs: FAQ[]; articles: Article[]; reviews: Review[]; relationships: Relationship[]; };
+export type CoreData = { products: Product[]; brands: Brand[]; manufacturers: Manufacturer[]; medications: Medication[]; devices: Device[]; diseases: Disease[]; categories: Category[]; faqs: FAQ[]; problems: Problem[]; articles: Article[]; reviews: Review[]; relationships: Relationship[]; };

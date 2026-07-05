@@ -168,5 +168,17 @@
       "targetType": "FAQ",
       "targetId": "faq-insulin-car"
     }
+  ],
+  "problems": [
+    {
+      "id": "problem-traveling-with-insulin",
+      "name": "Traveling with Insulin",
+      "slug": "traveling-with-insulin"
+    },
+    {
+      "id": "problem-keeping-insulin-cold",
+      "name": "Keeping Insulin Cold",
+      "slug": "keeping-insulin-cold"
+    }
   ]
 }

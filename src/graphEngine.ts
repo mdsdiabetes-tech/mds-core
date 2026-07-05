@@ -16,6 +16,7 @@ const collectionByNodeType: Record<NodeType, keyof CoreData | undefined> = {
   Device: 'devices',
   Article: 'articles',
   FAQ: 'faqs',
+  Problem: 'problems',
   Video: undefined,
   Review: 'reviews',
   Bundle: undefined,
@@ -40,6 +41,8 @@ const nodeTypeAliases: Record<string, NodeType> = {
   articles: 'Article',
   faq: 'FAQ',
   faqs: 'FAQ',
+  problem: 'Problem',
+  problems: 'Problem',
   video: 'Video',
   videos: 'Video',
   review: 'Review',
@@ -92,11 +95,20 @@ function connectedNodes(data: CoreData, graphRelationships: Relationship[]) {
   return uniqueNodes(nodes);
 }
 
+function allStoredNodes(data: CoreData) {
+  return Object.entries(collectionByNodeType).flatMap(([type, collectionName]) => {
+    if (!collectionName) return [];
+
+    const collection = data[collectionName] as Array<{ id: ID }>;
+    return collection.map(item => ({ id: item.id, type: type as NodeType, data: item }));
+  });
+}
+
 export function getGraph(data: CoreData) {
   const graphRelationships = relationships(data);
 
   return {
-    nodes: connectedNodes(data, graphRelationships),
+    nodes: uniqueNodes([...allStoredNodes(data), ...connectedNodes(data, graphRelationships)]),
     relationships: graphRelationships,
   };
 }
