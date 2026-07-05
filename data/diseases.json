@@ -1,0 +1,12 @@
+[
+  {
+    "id": "type-1",
+    "name": "Type 1 Diabetes",
+    "slug": "type-1-diabetes"
+  },
+  {
+    "id": "type-2",
+    "name": "Type 2 Diabetes",
+    "slug": "type-2-diabetes"
+  }
+]

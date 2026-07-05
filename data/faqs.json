@@ -1,0 +1,11 @@
+[
+  {
+    "id": "faq-insulin-car",
+    "question": "Can insulin be left in a hot car?",
+    "answer": "Insulin should not be exposed to extreme heat or freezing temperatures. Always follow the medication label and manufacturer guidance.",
+    "relatedProductIds": [
+      "p-insulin-cooler-001"
+    ],
+    "lastReviewed": "2026-07-04"
+  }
+]

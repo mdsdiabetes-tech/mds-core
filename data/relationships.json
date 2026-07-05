@@ -1,0 +1,66 @@
+[
+  {
+    "id": "rel-p-insulin-cooler-001-brand-b-mds",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "belongs_to_brand",
+    "targetType": "Brand",
+    "targetId": "b-mds"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-manufacturer-m-mds",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "made_by_manufacturer",
+    "targetType": "Manufacturer",
+    "targetId": "m-mds"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-category-c-coolers",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "belongs_to_category",
+    "targetType": "Category",
+    "targetId": "c-coolers"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-medication-med-humalog",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "compatible_with_medication",
+    "targetType": "Medication",
+    "targetId": "med-humalog"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-medication-med-novolog",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "compatible_with_medication",
+    "targetType": "Medication",
+    "targetId": "med-novolog"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-disease-type-1",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "recommended_for_disease",
+    "targetType": "Disease",
+    "targetId": "type-1"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-disease-type-2",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "recommended_for_disease",
+    "targetType": "Disease",
+    "targetId": "type-2"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-faq-faq-insulin-car",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "has_faq",
+    "targetType": "FAQ",
+    "targetId": "faq-insulin-car"
+  }
+]

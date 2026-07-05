@@ -1,0 +1,37 @@
+[
+  {
+    "id": "p-insulin-cooler-001",
+    "sku": "MDS-COOL-001",
+    "name": "Insulin Travel Cooler Case",
+    "slug": "insulin-travel-cooler-case",
+    "brandId": "b-mds",
+    "manufacturerId": "m-mds",
+    "categoryIds": [
+      "c-coolers"
+    ],
+    "diabetesTypes": [
+      "type-1",
+      "type-2"
+    ],
+    "compatibleMedicationIds": [
+      "med-humalog",
+      "med-novolog"
+    ],
+    "travelFriendly": true,
+    "prescriptionRequired": false,
+    "otc": true,
+    "temperatureRequirements": "Designed to help keep insulin protected during travel. Follow medication label and manufacturer guidance.",
+    "storageRequirements": "Use with approved cooling method and avoid freezing insulin.",
+    "images": [],
+    "faqIds": [
+      "faq-insulin-car"
+    ],
+    "seoKeywords": [
+      "insulin cooler",
+      "diabetes travel case",
+      "travel with insulin"
+    ],
+    "aiSummary": "A diabetes travel cooler case designed to help organize and protect insulin while traveling.",
+    "lastUpdated": "2026-07-04"
+  }
+]

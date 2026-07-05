@@ -1,0 +1,18 @@
+[
+  {
+    "id": "med-humalog",
+    "name": "Humalog",
+    "slug": "humalog",
+    "type": "rapid-acting insulin",
+    "storage": "Follow official medication label.",
+    "temperature": "Refrigerate until use; avoid freezing or excessive heat."
+  },
+  {
+    "id": "med-novolog",
+    "name": "NovoLog",
+    "slug": "novolog",
+    "type": "rapid-acting insulin",
+    "storage": "Follow official medication label.",
+    "temperature": "Refrigerate until use; avoid freezing or excessive heat."
+  }
+]

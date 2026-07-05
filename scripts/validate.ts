@@ -1,8 +1,8 @@
-import { loadCore } from '../src/dataStore.js';
+import { DATA_COLLECTIONS, loadCore } from '../src/dataStore.js';
 import { CoreData, NodeType, RelationshipType } from '../src/types.js';
 
 const data = await loadCore();
-const required = ['products','brands','manufacturers','medications','devices','diseases','categories','faqs','articles','reviews','relationships'];
+const required = DATA_COLLECTIONS;
 for (const key of required) if (!Array.isArray((data as any)[key])) throw new Error(`Missing array: ${key}`);
 
 const nodeTypes = new Set<NodeType>([
