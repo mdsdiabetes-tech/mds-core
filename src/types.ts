@@ -19,6 +19,7 @@ export type RelationshipType =
   | 'belongs_to_category'
   | 'compatible_with_device'
   | 'compatible_with_medication'
+  | 'recommended_for_problem'
   | 'recommended_for_disease'
   | 'related_product'
   | 'alternative_product'

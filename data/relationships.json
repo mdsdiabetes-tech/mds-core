@@ -62,5 +62,21 @@
     "type": "has_faq",
     "targetType": "FAQ",
     "targetId": "faq-insulin-car"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-problem-traveling-with-insulin",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "recommended_for_problem",
+    "targetType": "Problem",
+    "targetId": "problem-traveling-with-insulin"
+  },
+  {
+    "id": "rel-p-insulin-cooler-001-problem-keeping-insulin-cold",
+    "sourceType": "Product",
+    "sourceId": "p-insulin-cooler-001",
+    "type": "recommended_for_problem",
+    "targetType": "Problem",
+    "targetId": "problem-keeping-insulin-cold"
   }
 ]
