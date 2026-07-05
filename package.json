@@ -1,0 +1,1 @@
+{"name":"mds-core","version":"0.1.0","type":"module","scripts":{"dev":"tsx src/server.ts","seed":"tsx scripts/seed.ts","validate":"tsx scripts/validate.ts","build":"tsc"},"dependencies":{"@fastify/cors":"latest","ajv":"latest","dotenv":"latest","fastify":"latest","zod":"latest"},"devDependencies":{"tsx":"latest","typescript":"latest","@types/node":"latest"}}

@@ -1,0 +1,172 @@
+{
+  "products": [
+    {
+      "id": "p-insulin-cooler-001",
+      "sku": "MDS-COOL-001",
+      "name": "Insulin Travel Cooler Case",
+      "slug": "insulin-travel-cooler-case",
+      "brandId": "b-mds",
+      "manufacturerId": "m-mds",
+      "categoryIds": [
+        "c-coolers"
+      ],
+      "diabetesTypes": [
+        "type-1",
+        "type-2"
+      ],
+      "compatibleMedicationIds": [
+        "med-humalog",
+        "med-novolog"
+      ],
+      "travelFriendly": true,
+      "prescriptionRequired": false,
+      "otc": true,
+      "temperatureRequirements": "Designed to help keep insulin protected during travel. Follow medication label and manufacturer guidance.",
+      "storageRequirements": "Use with approved cooling method and avoid freezing insulin.",
+      "images": [],
+      "faqIds": [
+        "faq-insulin-car"
+      ],
+      "seoKeywords": [
+        "insulin cooler",
+        "diabetes travel case",
+        "travel with insulin"
+      ],
+      "aiSummary": "A diabetes travel cooler case designed to help organize and protect insulin while traveling.",
+      "lastUpdated": "2026-07-04"
+    }
+  ],
+  "brands": [
+    {
+      "id": "b-mds",
+      "name": "MDS Diabetes",
+      "slug": "mds-diabetes",
+      "description": "Diabetes supplies, accessories, travel products, and education."
+    }
+  ],
+  "manufacturers": [
+    {
+      "id": "m-mds",
+      "name": "MDS Diabetes",
+      "slug": "mds-diabetes"
+    }
+  ],
+  "medications": [
+    {
+      "id": "med-humalog",
+      "name": "Humalog",
+      "slug": "humalog",
+      "type": "rapid-acting insulin",
+      "storage": "Follow official medication label.",
+      "temperature": "Refrigerate until use; avoid freezing or excessive heat."
+    },
+    {
+      "id": "med-novolog",
+      "name": "NovoLog",
+      "slug": "novolog",
+      "type": "rapid-acting insulin",
+      "storage": "Follow official medication label.",
+      "temperature": "Refrigerate until use; avoid freezing or excessive heat."
+    }
+  ],
+  "devices": [],
+  "diseases": [
+    {
+      "id": "type-1",
+      "name": "Type 1 Diabetes",
+      "slug": "type-1-diabetes"
+    },
+    {
+      "id": "type-2",
+      "name": "Type 2 Diabetes",
+      "slug": "type-2-diabetes"
+    }
+  ],
+  "categories": [
+    {
+      "id": "c-coolers",
+      "name": "Insulin Coolers",
+      "slug": "insulin-coolers",
+      "description": "Travel cooling accessories for insulin and diabetes medications."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-insulin-car",
+      "question": "Can insulin be left in a hot car?",
+      "answer": "Insulin should not be exposed to extreme heat or freezing temperatures. Always follow the medication label and manufacturer guidance.",
+      "relatedProductIds": [
+        "p-insulin-cooler-001"
+      ],
+      "lastReviewed": "2026-07-04"
+    }
+  ],
+  "articles": [],
+  "reviews": [],
+  "relationships": [
+    {
+      "id": "rel-p-insulin-cooler-001-brand-b-mds",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "belongs_to_brand",
+      "targetType": "Brand",
+      "targetId": "b-mds"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-manufacturer-m-mds",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "made_by_manufacturer",
+      "targetType": "Manufacturer",
+      "targetId": "m-mds"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-category-c-coolers",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "belongs_to_category",
+      "targetType": "Category",
+      "targetId": "c-coolers"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-medication-med-humalog",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "compatible_with_medication",
+      "targetType": "Medication",
+      "targetId": "med-humalog"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-medication-med-novolog",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "compatible_with_medication",
+      "targetType": "Medication",
+      "targetId": "med-novolog"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-disease-type-1",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "recommended_for_disease",
+      "targetType": "Disease",
+      "targetId": "type-1"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-disease-type-2",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "recommended_for_disease",
+      "targetType": "Disease",
+      "targetId": "type-2"
+    },
+    {
+      "id": "rel-p-insulin-cooler-001-faq-faq-insulin-car",
+      "sourceType": "Product",
+      "sourceId": "p-insulin-cooler-001",
+      "type": "has_faq",
+      "targetType": "FAQ",
+      "targetId": "faq-insulin-car"
+    }
+  ]
+}
