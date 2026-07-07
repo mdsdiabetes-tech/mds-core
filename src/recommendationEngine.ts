@@ -43,6 +43,14 @@ function resolveProblemId(data: CoreData, query: RecommendationQuery) {
   return data.problems.find(problem => problem.id === value || problem.slug === value || problem.name.toLowerCase() === value.toLowerCase())?.id;
 }
 
+function problemName(data: CoreData, id: ID) {
+  return data.problems.find(problem => problem.id === id)?.name ?? 'the requested problem';
+}
+
+function medicationName(data: CoreData, id: ID) {
+  return data.medications.find(medication => medication.id === id)?.name ?? 'the requested medication';
+}
+
 function requestedMedication(query: RecommendationQuery) {
   return query.medicationId ?? query.medication;
 }
@@ -77,14 +85,14 @@ function scoreProduct(data: CoreData, product: Product, query: RecommendationQue
     const problemIds = relatedIds(data, product.id, 'recommended_for_problem');
     if (!problemIds.includes(problemId)) return null;
     score += 40;
-    addReason(reasons, 'problem_match', 'Product is recommended for the requested problem.');
+    addReason(reasons, 'problem_match', `Matches ${problemName(data, problemId).toLowerCase()}`);
   }
 
   if (medicationId) {
     const medicationIds = relatedIds(data, product.id, 'compatible_with_medication', product.compatibleMedicationIds);
     if (!medicationIds.includes(medicationId)) return null;
     score += 20;
-    addReason(reasons, 'medication_match', 'Product is compatible with the requested medication.');
+    addReason(reasons, 'medication_match', `Compatible with ${medicationName(data, medicationId)}`);
   }
 
   if (deviceId) {
@@ -111,7 +119,7 @@ function scoreProduct(data: CoreData, product: Product, query: RecommendationQue
   if (query.travel === true) {
     if (!product.travelFriendly) return null;
     score += 10;
-    addReason(reasons, 'travel_match', 'Product is marked travel friendly.');
+    addReason(reasons, 'travel_match', 'Travel-friendly product');
   }
 
   if (score === 0) {
