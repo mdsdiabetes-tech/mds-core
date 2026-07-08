@@ -29,5 +29,5 @@ app.get('/graph/products/:slug', productGraphRoute);
 app.get('/graph/nodes/:type/:id', async (req:any) => getNodeGraph(await loadCore(), req.params.type, req.params.id) ?? { error:'Not found' });
 app.post('/api/recommendations/v1', async (req:any) => recommendProductsV1(await loadCore(), req.body || {}));
 app.post('/recommend', async (req:any) => recommendProducts(await loadCore(), req.body || {}));
-const port = Number(process.env.PORT || 8787);
+const port = Number(process.env.PORT) || 8787;
 app.listen({ port, host: '0.0.0.0' });
